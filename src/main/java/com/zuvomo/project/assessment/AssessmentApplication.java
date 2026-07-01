@@ -1,0 +1,18 @@
+package com.zuvomo.project.assessment;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@EnableScheduling
+@ConfigurationPropertiesScan
+public class AssessmentApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AssessmentApplication.class, args);
+	}
+
+}
