@@ -120,7 +120,6 @@ export SPRING_DATASOURCE_PASSWORD=your-password
 The repository includes a `docker-compose.yml` file that starts:
 
 - PostgreSQL on port `5432`
-- Redis on port `6379`
 - The Spring Boot application on port `8081`
 
 Start everything with:
@@ -132,7 +131,6 @@ docker compose up --build
 Important note:
 
 - The current application code uses PostgreSQL.
-- Redis is included in the compose file, but there is no active Redis integration in the present codebase.
 
 Docker Compose PostgreSQL settings:
 
