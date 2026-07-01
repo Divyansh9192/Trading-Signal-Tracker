@@ -22,7 +22,6 @@ services:
 
     depends_on:
       - postgres
-      - redis
 
     ports:
       - "8081:8081"
