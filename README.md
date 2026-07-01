@@ -4,15 +4,29 @@ A Spring Boot 3 backend that lets users create, track, and evaluate trading sign
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
-- [Database Setup](#database-setup)
-- [How to Run the Application](#how-to-run-the-application)
-- [API Documentation](#api-documentation)
-- [Core Endpoints](#core-endpoints)
-- [Architecture Explanation](#architecture-explanation)
-- [Testing](#testing)
+- [Trading Signal Tracking Application](#trading-signal-tracking-application)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Tech Stack](#tech-stack)
+  - [Setup Instructions](#setup-instructions)
+    - [Prerequisites](#prerequisites)
+    - [Clone and configure](#clone-and-configure)
+  - [Database Setup](#database-setup)
+    - [Option 1: Local PostgreSQL](#option-1-local-postgresql)
+    - [Option 2: Docker Compose](#option-2-docker-compose)
+  - [How to Run the Application](#how-to-run-the-application)
+    - [Run locally](#run-locally)
+    - [Build the JAR](#build-the-jar)
+  - [API Documentation](#api-documentation)
+  - [Core Endpoints](#core-endpoints)
+    - [Example create request](#example-create-request)
+    - [Example success response](#example-success-response)
+    - [Validation and error behavior](#validation-and-error-behavior)
+  - [Architecture Explanation](#architecture-explanation)
+    - [1. Project structure](#1-project-structure)
+    - [2. Business logic flow](#2-business-logic-flow)
+    - [3. External API integration](#3-external-api-integration)
+  - [Testing](#testing)
 
 ## Overview
 
@@ -53,7 +67,7 @@ Make sure the following tools are installed:
 ### Clone and configure
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Divyansh9192/Trading-Signal-Tracker
 cd assessment
 ```
 
